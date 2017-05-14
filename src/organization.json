@@ -1,0 +1,35 @@
+{
+  "basics": {
+    "name": "PanaFintech",
+    "label": "La comunidad de Fintech de Panamá",
+    "picture": "https://panafintech.com/images/logo-panafintech-contained.png",
+    "email": "comunidad@panafintech.com",
+    "website": "https://panafintech.com",
+    "summary": "PROMOVIENDO LA INNOVACIÓN FINANCIERA",
+    "location": {
+      "city": "Panama",
+      "countryCode": "PA",
+      "region": "Panama"
+    },
+    "profiles": [{
+        "network": "Github",
+        "username": "panafintech",
+        "url": "https://github.com/panafintech"
+      }, {
+        "network": "Twitter",
+        "username": "panafintech",
+        "url": "http://twitter.com/panafintech"
+      },
+      {
+        "network": "Facebook",
+        "username": "panafintech",
+        "url": "https://www.facebook.com/panafintech/"
+      },
+      {
+        "network": "Instagram",
+        "username": "pana.fintech",
+        "url": "https://www.instagram.com/pana.fintech/"
+      }
+    ]
+  }
+}

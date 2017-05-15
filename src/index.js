@@ -11,10 +11,12 @@ import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Con
 import Icon from 'react-icons-kit'
 import { facebook, twitter, mail2, github } from 'react-icons-kit/icomoon/'
 
+import HeaderBanner from './components/HeaderBanner/HeaderBanner'
+
 const Jumbo = () => (
   <Jumbotron fluid>
     <Container fluid>
-      <h1 className='display-3'>Fluid jumbotron</h1>
+      <h1 className='display-3'>Fluid jumbotronasdf</h1>
       <p className='lead'>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
     </Container>
   </Jumbotron>
@@ -60,9 +62,8 @@ const Home = () => (
 const Gapp = () => (
   <Container fluid>
     <Row>
-      <Jumbo />
+      <HeaderBanner />
     </Row>
-    <Footer />
   </Container>
 )
 

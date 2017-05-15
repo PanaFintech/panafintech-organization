@@ -50,12 +50,12 @@ body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before
   background-size: cover;
 }
 
-.banner-show-anim {
-  visibility: visible;
+.logo-img-div.banner-show-anim {
   -webkit-transform: translateY(0) scale(1);
   opacity: 1;
   transform: translateY(0) scale(1);
-  -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s; transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+  -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+  transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
 }
 
 
@@ -65,6 +65,7 @@ body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before
   margin-left:0px;
   margin-right:0px;
   text-align:left;
+  opacity: 0;
 }
 
 .logo-img {

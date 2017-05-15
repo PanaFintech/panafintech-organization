@@ -1,0 +1,206 @@
+body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.15) 40%,rgba(0,0,0,0) 100%);
+}
+
+.banner-wrap {
+  position: relative;
+  height: 100%;
+  background: #000000;
+  color: #ffffff;
+}
+
+.wsite-not-footer {
+  text-align: left;
+}
+
+.wsite-section-wrap {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.wsite-section {
+  display: table-cell;
+  width: 100%;
+  height: 230px;
+}
+
+.wsite-header-section {
+  text-align: center;
+}
+
+.splash-page .wsite-background, .wsite-header-section {
+  // background: url(theme/images/default-bg.jpg?1494463805) no-repeat top center;
+  background-size: cover;
+}
+
+.wsite-section-bg-image {
+  height: 630px;
+  vertical-align: middle;
+  background-image: url(../assets/home-banner.jpg) ;background-repeat: no-repeat ;
+  background-position: 50% 50% ;
+  background-size: 100% ;
+  background-color: transparent ;
+  background-size: cover;
+}
+
+.banner-show-anim {
+  visibility: visible;
+  -webkit-transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s; transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+}
+
+
+.logo-img-div {
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-left:0px;
+  margin-right:0px;
+  text-align:left;
+}
+
+.logo-img {
+  width:301;max-width:100%
+}
+
+.wsite-multicol-table-wrap {
+  margin:0 -0px;
+}
+
+.banner-wrap h2 {
+  color: inherit;
+  font-family: 'Birdseye', sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+  line-height: 1.15;
+  margin: 15px auto;
+  text-align: left;
+}
+
+.banner-wrap div.paragraph {
+  color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.15em;
+  margin: 15px auto;
+  text-align: left;
+}
+
+#header-banner {
+
+  .wsite-multicol {
+    position: relative;
+    direction: ltr;
+  }
+
+  .wsite-multicol-table {
+
+    position: relative;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+
+    td {
+      padding: 10px 0;
+    }
+
+    .wsite-multicol-col {
+      vertical-align: top;
+      margin: 0 !important;
+      border: 0 !important;
+    }
+
+    .td-asist {
+      width:27.869458128078%;
+    }
+
+    .td-comunidad {
+      width:17.366956132323%;
+    }
+
+    .td-space {
+      width:0.44992114332444%; padding:10px 0;
+
+      .wsite-spacer {
+        height:10px;
+      }
+    }
+
+    .td-objective {
+      width:40.442513107342%;
+      padding:10px 0;
+
+
+    }
+
+    .td-socials {
+      width:13.871151488932%;
+      padding:10px 0;
+
+      >div {
+        text-align:inherit;
+      }
+
+      .wsite-social {
+        white-space: normal;
+        position: relative;
+        display: inline-block;
+
+        .wsite-social-item {
+          display: inline-block;
+          font-size: 23px;
+          margin: 5px 7px;
+          -webkit-transition: all 300ms ease;
+          -moz-transition: all 300ms ease;
+          -ms-transition: all 300ms ease;
+          transition: all 300ms ease;
+          vertical-align: middle;
+          width: auto;
+          height: auto;
+          background-image: none;
+          background-repeat: no-repeat;
+          text-transform: none;
+          text-decoration: none;
+
+          &:before {
+            font-family: "wsocial";
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+          }
+
+          &:hover {
+            color: rgba(0,0,0,0.6);
+          }
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}

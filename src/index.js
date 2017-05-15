@@ -60,11 +60,7 @@ const Home = () => (
 )
 
 const Gapp = () => (
-  <Container fluid>
-    <Row>
-      <HeaderBanner />
-    </Row>
-  </Container>
+  <HeaderBanner />
 )
 
 ReactDOM.render(

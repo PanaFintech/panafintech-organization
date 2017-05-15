@@ -1,4 +1,4 @@
-body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before {
+/*body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before {
     content: '';
     display: block;
     position: absolute;
@@ -81,8 +81,23 @@ body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before
   font-size: 80px;
   font-weight: 100;
   line-height: 1.15;
-  margin: 15px auto;
+  margin: 25px auto 15px;
   text-align: left;
+  opacity: 1;
+}
+
+.wsite-content-title.title-anim {
+  text-align:left;
+  -webkit-transform:translateY(0) scale(1);
+  transform:translateY(0) scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+  transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+}
+
+.wsite-content-title.move-top-anim {
+  margin-top: 15px;
+  transition: all 0.3s ease-in;
 }
 
 .banner-wrap div.paragraph {
@@ -92,8 +107,42 @@ body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.15em;
-  margin: 15px auto;
+  margin: 25px auto 0;
   text-align: left;
+  opacity: 1;
+}
+
+.banner-wrap div.paragraph.paragraph-anim {
+  text-align:left;
+  -webkit-transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+  transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+}
+
+.banner-wrap div.paragraph.move-top-anim {
+  margin-top: 15px;
+  transition: all 0.3s ease-in;
+}
+
+#header-banner .header-banner-btn-div {
+  opacity: 1;
+  margin-top: 25px;
+}
+
+#header-banner .header-banner-btn-div.anim {
+  visibility: visible;
+  -webkit-transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+  transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+}
+
+#header-banner .header-banner-btn-div.move-top-anim {
+  margin-top: 15px;
+  transition: all 0.3s ease-in;
 }
 
 #header-banner .wsite-multicol {
@@ -196,4 +245,130 @@ body.header-overlay-on .wsite-header-section:not(.wsite-section-bg-color):before
 
 #header-banner .wsite-multicol-table .td-socials .wsite-social .wsite-social-item:last-child {
   margin-right: 0;
+}*/
+
+#header-banner {
+  background: url(../images/jumbo-background.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header-banner .logo-div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+#header-banner .logo-div img {
+  max-width: 100%;
+  width: 301px;
+}
+
+#header-banner h2.header-title {
+  color: inherit;
+  font-family: 'Birdseye',sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 50px auto 15px;
+  text-align: left;
+  opacity: 1;
+  color: #fff;
+}
+
+#header-banner .sub-title {
+  color: inherit;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: .15em;
+  margin: 0;
+  text-align: left;
+  opacity: 1;
+  color: #fff;
+}
+
+#header-banner .btn-div {
+  display: flex;
+  margin: 15px auto 0;
+  padding: 10px 0;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+#header-banner .btn-div .page-btn-div {
+
+}
+
+#header-banner .pana-btn {
+  display: inline-block;
+  height: auto;
+  padding: 14px 30px;
+  background-image: none !important;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  border: 1px solid #fff;
+
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 12px;
+}
+
+
+#header-banner .pana-btn:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+#header-banner .pana-btn-primary {
+  background-color: #fff;
+  color: #000;
+  font-weight: 800;
+}
+
+#header-banner .pana-btn-primary:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+#header-banner .btn-asist {
+  margin-right: 50px
+}
+
+#header-banner .btn-commun {
+  margin-right: 10px;
+}
+
+#header-banner .social-btn-div {
+  display: flex;
+  align-items: center;
+}
+
+#header-banner .social-btn-div .pana-social-item {
+  color: #fff;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+  margin-left: 10px;
+}
+
+#header-banner .social-btn-div .pana-social-item:first-child {
+  margin-left: 0;
+}
+
+#header-banner .social-btn-div .pana-social-item:hover {
+  color: rgba(0,0,0,0.6);
 }

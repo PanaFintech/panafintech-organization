@@ -15,7 +15,8 @@ export default class HeaderBanner extends React.Component {
   componentDidMount () {
     setTimeout(() => {
       this.setState({
-        isLoaded: true
+        // isLoaded: true
+        isLoaded: false //test code
       })
     }, 500);
   }
@@ -27,111 +28,84 @@ export default class HeaderBanner extends React.Component {
         return 'wsite-image wsite-image-border-none logo-img-div banner-show-anim';
       }
       else {
-        return 'wsite-image wsite-image-border-none logo-img-div';
+        return 'logo-div';
+      }
+    } else if( className == 'title') {
+      if(this.state.isLoaded) {
+        return 'wsite-content-title title-anim';
+      }
+      else {
+        return 'header-title';
+      }
+    } else if(className == 'paragraph' ) {
+      if(this.state.isLoaded) {
+        return 'paragraph paragraph-anim';
+      }
+      else {
+        return 'sub-title';
+      }
+    } else if(className == 'btndiv' ) {
+      if(this.state.isLoaded) {
+        return 'header-banner-btn-div anim';
+      }
+      else {
+        return 'btn-div';
       }
     }
   }
 
   render() {
     return (
-      <div id="header-banner" className="banner-wrap">
-        <div className="wsite-elements wsite-not-footer wsite-header-elements">
-          <div className="wsite-section-wrap">
-            <div className="wsite-section wsite-header-section wsite-section-bg-image wsite-section-effect-reveal">
-              <div className="wsite-section-content">
-                <div className="container">
-                  <div className="banner">
-                    <div className="wsite-section-elements">
+      <section id="header-banner" className="pana-section">
+        <div className="container">
 
-                      <div className={this.getClassName('logo')}>
-                        <a>
-                          <img className="logo-img" src="./images/logo-panafintech.png" alt="Picture" />
-                        </a>
-                      </div>
+          <div className={this.getClassName('logo')}>
+            <a>
+              <img className="logo-img" src="./images/logo-panafintech.png" alt="Picture" />
+            </a>
+          </div>
 
-                      <h2 className="wsite-content-title" data-sr-id="3">
-                        <font size="7">
-                          <strong>PROMOVIENDO LA INNOVACIÓN FINANCIERA</strong>
-                        </font>
-                      </h2>
+          <h2 className={this.getClassName('title')}>
+            PROMOVIENDO LA INNOVACIÓN FINANCIERA
+          </h2>
 
-                      <div className="paragraph" data-sr-id="4">
-                        <font size="4">Somos la comunidad de Fintech de Panamá.</font>
-                      </div>
+          <p className={this.getClassName('paragraph')}>
+            Somos la comunidad de Fintech de Panamá.
+          </p>
 
-                      <div className="" data-sr-id="5">
-                        <div className="wsite-multicol">
-                          <div className="wsite-multicol-table-wrap">
-                            <table className="wsite-multicol-table">
-                              <tbody className="wsite-multicol-tbody">
-                                <tr className="wsite-multicol-tr">
-                                  <td className="wsite-multicol-col td-asist">
-                                    <div className="text-left">
-                                      <a
-                                        className="wsite-button wsite-button-large wsite-button-highlight" href="http://www.panafintech.com/#evento">
-                                        <span className="wsite-button-inner">
-                                          <strong>¡asiste a nuestros eventos!</strong>
-                                        </span>
-                                      </a>
-                                    </div>
-                                  </td>
+          <div className={this.getClassName('btndiv')}>
 
-                                  <td className="wsite-multicol-col td-comunidad">
-                                    <div className="text-left">
-                                      <a
-                                        className="wsite-button wsite-button-large wsite-button-normal"
-                                        href="http://www.panafintech.com/#slack">
-                                        <span className="wsite-button-inner">
-                                          Comunidad slack
-                                        </span>
-                                      </a>
-                                    </div>
-                                  </td>
+            <div className="page-btn-div">
+              <a className="btn-asist pana-btn pana-btn-primary"  href="http://www.panafintech.com/#evento">
+                  ¡asiste a nuestros eventos!
+              </a>
 
-                                  <td className="wsite-multicol-col td-space">
-                                    <div className="wsite-spacer"></div>
-                                  </td>
+              <a className="btn-commun pana-btn" href="http://www.panafintech.com/#slack">
+                  Comunidad slack
+              </a>
 
-                                  <td className="wsite-multicol-col td-objective">
-                                    <div className="text-left">
-                                      <a className="wsite-button wsite-button-large wsite-button-normal" href="http://www.panafintech.com/#objetivos">
-                                        <span className="wsite-button-inner">Objetivos</span>
-                                      </a>
-                                    </div>
-                                  </td>
+              <a className="btn-object pana-btn" href="http://www.panafintech.com/#objetivos">
+                Objetivos
+              </a>
+            </div>
 
-                                  <td className="wsite-multicol-col td-socials">
-                                    <div>
-                                      <span className="wsite-social wsite-social-default">
-                                        <a className="first-child wsite-social-item wsite-social-facebook" href="https://www.facebook.com/panafintech/" target="_blank">
-                                          <Icon icon={facebook} size={20}/>
-                                        </a>
-                                        <a className="wsite-social-item wsite-social-twitter" href="https://twitter.com/panafintech" target="_blank">
-                                          <Icon icon={twitter} size={20}/>
-                                        </a>
-                                        <a className="wsite-social-item wsite-social-instagram" href="https://www.instagram.com/pana.fintech/" target="_blank">
-                                          <Icon icon={instagram} size={20}/>
-                                        </a>
-                                        <a className="last-child wsite-social-item wsite-social-mail" href="mailto:comunidad@panafintech.com" target="_blank">
-                                          <Icon icon={mail2} size={20}/>
-                                        </a>
-                                      </span>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="social-btn-div">
+              <a className="pana-social-item pana-social-facebook" href="https://www.facebook.com/panafintech/" target="_blank">
+                <Icon icon={facebook} size={20}/>
+              </a>
+              <a className="pana-social-item pana-social-twitter" href="https://twitter.com/panafintech" target="_blank">
+                <Icon icon={twitter} size={20}/>
+              </a>
+              <a className="pana-social-item pana-social-instagram" href="https://www.instagram.com/pana.fintech/" target="_blank">
+                <Icon icon={instagram} size={20}/>
+              </a>
+              <a className="pana-social-item pana-social-mail" href="mailto:comunidad@panafintech.com" target="_blank">
+                <Icon icon={mail2} size={20}/>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 }

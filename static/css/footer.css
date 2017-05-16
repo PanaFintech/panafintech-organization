@@ -1,0 +1,75 @@
+#pana-footer {
+  padding: 60px 40px;
+  background-color: #f2f2f2;
+}
+
+#pana-footer .container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#pana-footer .footer-description {
+  flex-basis: 0;
+  min-width: 350px;
+}
+
+#pana-footer .footer-title {
+  font-size: 20px;
+  margin: 0 auto 20px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  padding: 0;
+}
+
+#pana-footer .description {
+  font-size: 14px;
+  margin: 0 auto 20px;
+  color: #000000;
+  font-family: 'Birdseye', sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+#pana-footer .pana-social-item {
+  color: #000;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+  margin-left: 10px;
+}
+
+#pana-footer .social-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#pana-footer .social-btn-div {
+  text-align: right;
+}
+
+#pana-footer .social-btn-div .pana-social-item:first-child {
+  margin-left: 0;
+}
+
+#pana-footer .social-btn-div .pana-social-item:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+
+#pana-footer .copyright {
+  font-family: 'Birdseye', sans-serif;
+  text-align: right;
+  font-size: 10px;
+  margin: 0 auto 20px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #000;
+}

@@ -13,6 +13,7 @@ import { facebook, twitter, mail2, github } from 'react-icons-kit/icomoon/'
 
 import Header from './components/Header/Header.js'
 import HeaderBanner from './components/HeaderBanner/HeaderBanner'
+import Footer from './components/Footer/Footer.js'
 
 const Jumbo = () => (
   <Jumbotron fluid>
@@ -29,31 +30,6 @@ const Content = () => (
   </Col>
 )
 
-const Footer = () => (
-  <Row>
-    <Row>
-      <Container>
-        <Col>
-          <p className='text-muted float-left align-middle' />
-        </Col>
-      </Container>
-    </Row>
-    <Row>
-      <footer className='footer'>
-        <Container>
-          <Col>
-            <p className='text-muted float-left align-middle'><h2>¡CONTÁCTANOS!</h2>
-              <p>Si te interesa la innovación financiera, tienes un proyecto Fintech, o en general quieres conversar con nosotros, únete a nuestra comunidad de Slack o contáctanos a comunidad@panafintech.com</p></p>
-          </Col>
-          <Col>
-            <p className='text-muted float-right align-middle'>Content © 2017 PanaFintech. TODOS LOS DERECHOS RESERVADOS | Theme by <a href='https://bootswatch.com/'>bootswatch</a></p>
-          </Col>
-        </Container>
-      </footer>
-    </Row>
-  </Row>
-)
-
 const Home = () => (
   <div>
     <h2>Home</h2>
@@ -64,6 +40,7 @@ const Gapp = () => (
   <div>
     <Header />
     <HeaderBanner />
+    <Footer />
   </div>
 )
 

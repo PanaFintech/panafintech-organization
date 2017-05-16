@@ -11,6 +11,7 @@ import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Con
 import Icon from 'react-icons-kit'
 import { facebook, twitter, mail2, github } from 'react-icons-kit/icomoon/'
 
+import Header from './components/Header/Header.js'
 import HeaderBanner from './components/HeaderBanner/HeaderBanner'
 
 const Jumbo = () => (
@@ -60,7 +61,10 @@ const Home = () => (
 )
 
 const Gapp = () => (
-  <HeaderBanner />
+  <div>
+    <Header />
+    <HeaderBanner />
+  </div>
 )
 
 ReactDOM.render(

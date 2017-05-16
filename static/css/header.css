@@ -1,0 +1,35 @@
+#pana-navbar {
+  background-color: transparent;
+  padding: 20px 40px;
+}
+
+#pana-navbar .navbar-brand {
+  display: none;
+}
+
+#pana-navbar .nav-item-panafintech {
+  display: block;
+  padding: 12px 20px;
+  border: 1px solid #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 5px 5px 5px 0;
+}
+
+#pana-navbar .nav-item-panafintech:hover {
+  opacity: 0.6;
+}
+
+#pana-navbar .navbar-collapse {
+  justify-content: flex-end;
+}

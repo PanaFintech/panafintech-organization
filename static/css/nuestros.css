@@ -1,0 +1,78 @@
+#section-nuestros {
+  background-color: #d9d9d9;
+}
+
+#section-nuestros .container {
+  padding: 60px 40px;
+}
+
+#section-nuestros h2 {
+  color: rgb( 42, 42, 42 );
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 auto 30px;
+}
+
+#section-nuestros .nuestros-content {
+  margin: 36px 0 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+
+#section-nuestros .nuestros-content .nuestros-content-item {
+  display: flex;
+  text-align: center;
+  width: 33.33%;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+#section-nuestros .nuestros-content .nuestros-content-item:first-child {
+  padding-left: 0;
+}
+
+#section-nuestros .nuestros-content .nuestros-content-item:last-child {
+  padding-right: 0;
+}
+
+#section-nuestros .nuestros-content .nuestros-content-item >img {
+  margin: 0 auto 10px;
+  padding: 10px 0;
+}
+
+#section-nuestros .nuestros-content .nuestros-content-item .content-title {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.img-ecosystem {
+  width: 170px;
+}
+
+.img-info {
+  width: 169px;
+}
+
+.img-law {
+  width: 174px;
+}
+
+#section-nuestros .nuestros-content .nuestros-content-item .description {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.75;
+  text-align: center;
+  margin: 0 0 30px 0;
+}

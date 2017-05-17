@@ -36,7 +36,7 @@ class SubscribeForm extends React.Component {
 
     if(type == 'email') {
       if( this.state.email == null ) {
-        return "  ";
+        return "";
       }else {
         if( this.state.email.length == 0) {
           return "Este campo es obligatorio.";
@@ -46,30 +46,30 @@ class SubscribeForm extends React.Component {
           if (atpos<1 || dotpos<atpos+2 || dotpos+2>=this.state.email.length) {
             return "Por favor, escribe una dirección de correo válida";
           }else{
-            return "  ";
+            return "";
           }
         }
       }
     }else if(type == 'firstname') {
       if( this.state.firstname == null ) {
-        return "  ";
+        return "";
       }else {
         if( this.state.firstname.length == 0) {
           return "Este campo es obligatorio.";
         }else {
-          return "  ";
+          return "";
         }
       }
 
     }
     else if(type == 'lastname') {
       if( this.state.lastname == null ) {
-        return "  ";
+        return "";
       }else {
         if( this.state.lastname.length == 0) {
           return "Este campo es obligatorio.";
         }else {
-          return "  ";
+          return "";
         }
       }
 
@@ -92,7 +92,7 @@ class SubscribeForm extends React.Component {
       <form onSubmit={this.onSubmit}>
 
         <div className={this.getClasses('email')}>
-          <label htmlFor='email'>Correo electrónico</label>
+          <label htmlFor='email'>Correo electrónico *</label>
           <input
             ref='email'
             type='email'
@@ -130,6 +130,10 @@ class SubscribeForm extends React.Component {
           {this.renderHelpText(this.getValidateInput('lastname'))}
         </div>
 
+        <div className='text-left form-group'>
+          <button type='submit' className='btn btn-large btn-primary'>Subscribe</button>
+        </div>
+
       </form>
     );
   }
@@ -149,11 +153,19 @@ class SubscribeForm extends React.Component {
 
   onSubmit(event) {
     event.preventDefault();
+
     const onValidate = (error) => {
       if (error) {
-        //form has errors; do not submit
+
+        Object.keys(this.state).map((key) => {
+          let state = {};
+          state[key] = "";
+          this.setState(state);
+        });
+
       } else {
         //no errors; submit form
+        console.log("Submit");
       }
     };
     this.props.validate(onValidate);

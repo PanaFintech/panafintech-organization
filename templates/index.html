@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- cual idioma? -->
+<html lang="<%= package.lang %>">
+<head>
+    <!-- Fill in with our package details -->
+    <title><%= package.name %> - <%= package.description %></title>
+    <meta name="keywords" content="<%= package.keywords %>">
+    <meta name="author" content="<%= package.author %>">
+    <!-- Generic header info -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- vendor css files -->
+    <link href="css/tether.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- panafintech custom css files, to match legacy site -->
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/fullhouse.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/headerbanner.css" rel="stylesheet" type="text/css">
+    <link href="css/nuestros.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id='gapp'>
+    <!-- Our app will display here -->
+  </div>
+  <!-- load big JS files after content -->
+  <!-- vendor js files -->
+  <script type="application/javascript" src="js/jquery.js"></script>
+  <script type="application/javascript" src="js/tether.js"></script>
+  <script type="application/javascript" src="js/bootstrap.js"></script>
+  <script type="application/javascript" src="js/react.js"></script>
+  <script type="application/javascript" src="js/react-dom.js"></script>
+  <script type="application/javascript" src="js/reactstrap.min.js"></script>
+  <!-- our app -->
+  <script type="application/javascript" src="index.js"></script>
+</body>
+</html>

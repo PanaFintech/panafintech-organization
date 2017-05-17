@@ -1,0 +1,23 @@
+{
+  "location": {
+    "city": "Panama",
+    "countryCode": "PA",
+    "region": "Panama"
+  },
+  "profiles": [{
+      "network": "Twitter",
+      "username": "panafintech",
+      "url": "http://twitter.com/panafintech"
+    },
+    {
+      "network": "Facebook",
+      "username": "panafintech",
+      "url": "https://www.facebook.com/panafintech/"
+    },
+    {
+      "network": "Instagram",
+      "username": "pana.fintech",
+      "url": "https://www.instagram.com/pana.fintech/"
+    }
+  ]
+}

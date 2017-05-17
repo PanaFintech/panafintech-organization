@@ -1,25 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'react';
-import Joi from 'joi';
-import validation from 'react-validation-mixin';
-import strategy from 'joi-validation-strategy';
-import classnames from 'classnames';
+import PropTypes from 'react'
+import Joi from 'joi'
+import validation from 'react-validation-mixin'
+import strategy from 'joi-validation-strategy'
+import classnames from 'classnames'
 
 class SubscribeForm extends React.Component {
-
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.validatorTypes = {
       email: Joi.string().email().required().label('Email'),
       firstname: Joi.string().required().label('Nombre'),
       lastname: Joi.string().required().label('Apellido')
-    };
+    }
 
-    this.getValidatorData = this.getValidatorData.bind(this);
-    this.renderHelpText = this.renderHelpText.bind(this);
-    this.getClasses = this.getClasses.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    this.getValidatorData = this.getValidatorData.bind(this)
+    this.renderHelpText = this.renderHelpText.bind(this)
+    this.getClasses = this.getClasses.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
 
     this.state = {
       email: null,
@@ -28,66 +27,59 @@ class SubscribeForm extends React.Component {
     }
   }
 
-  getValidatorData() {
-    return this.state;
+  getValidatorData () {
+    return this.state
   }
 
-  getValidateInput(type) {
-
-    if(type == 'email') {
-      if( this.state.email == null ) {
-        return "";
-      }else {
-        if( this.state.email.length == 0) {
-          return "Este campo es obligatorio.";
-        }else {
-          let atpos = this.state.email.indexOf("@");
-          let dotpos = this.state.email.lastIndexOf(".");
-          if (atpos<1 || dotpos<atpos+2 || dotpos+2>=this.state.email.length) {
-            return "Por favor, escribe una dirección de correo válida";
-          }else{
-            return "";
+  getValidateInput (type) {
+    if (type == 'email') {
+      if (this.state.email == null) {
+        return ''
+      } else {
+        if (this.state.email.length == 0) {
+          return 'Este campo es obligatorio.'
+        } else {
+          let atpos = this.state.email.indexOf('@')
+          let dotpos = this.state.email.lastIndexOf('.')
+          if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= this.state.email.length) {
+            return 'Por favor, escribe una dirección de correo válida'
+          } else {
+            return ''
           }
         }
       }
-    }else if(type == 'firstname') {
-      if( this.state.firstname == null ) {
-        return "";
-      }else {
-        if( this.state.firstname.length == 0) {
-          return "Este campo es obligatorio.";
-        }else {
-          return "";
+    } else if (type == 'firstname') {
+      if (this.state.firstname == null) {
+        return ''
+      } else {
+        if (this.state.firstname.length == 0) {
+          return 'Este campo es obligatorio.'
+        } else {
+          return ''
         }
       }
-
-    }
-    else if(type == 'lastname') {
-      if( this.state.lastname == null ) {
-        return "";
-      }else {
-        if( this.state.lastname.length == 0) {
-          return "Este campo es obligatorio.";
-        }else {
-          return "";
+    } else if (type == 'lastname') {
+      if (this.state.lastname == null) {
+        return ''
+      } else {
+        if (this.state.lastname.length == 0) {
+          return 'Este campo es obligatorio.'
+        } else {
+          return ''
         }
       }
-
     }
-
   }
 
-  onChange(field) {
-
+  onChange (field) {
     return event => {
-      let state = {};
-      state[field] = event.target.value;
-      this.setState(state);
-    };
-
+      let state = {}
+      state[field] = event.target.value
+      this.setState(state)
+    }
   }
 
-  render() {
+  render () {
     return (
       <form onSubmit={this.onSubmit}>
 
@@ -135,40 +127,38 @@ class SubscribeForm extends React.Component {
         </div>
 
       </form>
-    );
+    )
   }
 
-  renderHelpText(message) {
+  renderHelpText (message) {
     return (
-     <span className='help-block'>{message}</span>
-    );
+      <span className='help-block'>{message}</span>
+    )
   }
 
-  getClasses(field) {
+  getClasses (field) {
     return classnames({
       'form-group': true,
       'has-error': !this.props.isValid(field)
-    });
+    })
   }
 
-  onSubmit(event) {
-    event.preventDefault();
+  onSubmit (event) {
+    event.preventDefault()
 
     const onValidate = (error) => {
       if (error) {
-
         Object.keys(this.state).map((key) => {
-          let state = {};
-          state[key] = "";
-          this.setState(state);
-        });
-
+          let state = {}
+          state[key] = ''
+          this.setState(state)
+        })
       } else {
-        //no errors; submit form
-        console.log("Submit");
+        // no errors; submit form
+        console.log('Submit')
       }
-    };
-    this.props.validate(onValidate);
+    }
+    this.props.validate(onValidate)
   }
 }
 
@@ -178,7 +168,7 @@ SubscribeForm.propTypes = {
   isValid: PropTypes.func,
   handleValidation: PropTypes.func,
   getValidationMessages: PropTypes.func,
-  clearValidations: PropTypes.func,
-};
+  clearValidations: PropTypes.func
+}
 
-module.exports = validation(strategy)(SubscribeForm);
+module.exports = validation(strategy)(SubscribeForm)

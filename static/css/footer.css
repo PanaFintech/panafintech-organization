@@ -51,6 +51,14 @@
   text-align: right;
 }
 
+#pana-footer .social-btn-div a {
+  color: #000;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
 #pana-footer .social-btn-div .pana-social-item:first-child {
   margin-left: 0;
 }

@@ -1,0 +1,15 @@
+{
+  "network": "Email",
+  "username": "panafintech",
+  "url": "mailto://comunidad@panafintech.com"
+},
+{
+  "network": "Github",
+  "username": "panafintech",
+  "url": "https://github.com/panafintech"
+},
+{
+  "network": "slack",
+  "username": "panafintech",
+  "url": "http://panafintech.slack.com/"
+}

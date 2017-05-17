@@ -1,12 +1,14 @@
 {
-  "name": "panafintech-website",
+  "name": "PanaFintech",
+  "lang": "es",
   "version": "0.0.1",
-  "description": "Website for PanaFintech.com",
-  "main": "index.js",
+  "description": "La comunidad de Fintech de Panama",
+  "main": "dist/index.js",
   "scripts": {
     "build": "node node_modules/gulp/bin/gulp.js",
     "test": "mocha"
   },
+  "keywords": ["finance", "technology", "fintech", "community", "panama"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/panafintech/panafintech-website.git"
@@ -29,7 +31,7 @@
     "react-icons": "^2.2.3",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
-    "reactstrap": "^4.5.0",
+    "reactstrap": "4.6.1",
     "social-logos": "^1.0.1",
     "svg-social-icons": "^1.1.0",
     "tether": "^1.4.0"
@@ -41,6 +43,8 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
     "babelify": "^7.3.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "bootswatch": "^4.0.0-alpha.6",
     "browserify": "^14.1.0",
     "camel-case": "^3.0.0",
     "font-awesome": "^4.7.0",
@@ -56,6 +60,7 @@
     "gulp-newer": "^1.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-tap": "^0.1.3",
+    "gulp-template": "^4.0.0",
     "gulp-uglifycss": "^1.0.8",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",

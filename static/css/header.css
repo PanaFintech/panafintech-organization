@@ -1,6 +1,7 @@
 #pana-navbar {
   background-color: transparent;
   padding: 20px 40px;
+  border: none;
 }
 
 #pana-navbar .navbar-brand {

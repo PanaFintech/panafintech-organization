@@ -12,6 +12,15 @@ body {
   margin: 0;
 }
 
+h2 {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 auto 30px;
+}
+
 .pana-section .container {
   width: 100%;
   max-width: 1200px;

@@ -8,12 +8,8 @@
 
 #section-nuestros h2 {
   color: rgb( 42, 42, 42 );
-  text-align: center;
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  line-height: 1.25;
   margin: 60px auto 0;
+  text-align: center;
 }
 
 #section-nuestros .nuestros-content {

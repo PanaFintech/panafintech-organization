@@ -1,0 +1,14 @@
+#section-fullhouse {}
+
+#section-fullhouse .container {
+  padding: 60px 40px;
+}
+
+#section-fullhouse h2.sub-title {
+  text-align: center;
+  margin: 46px 0 66px;
+}
+
+#section-fullhouse .fullhouse-content {
+  display: flex;
+}

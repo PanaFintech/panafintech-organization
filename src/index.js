@@ -15,6 +15,7 @@ import Header from './components/Header/Header.js'
 import HeaderBanner from './components/HeaderBanner/HeaderBanner'
 import FullHouse from './components/FullHouse/FullHouse'
 import Nuestros from './components/Nuestros/Nuestros'
+import Comunidad from './components/Comunidad/Comunidad'
 import Footer from './components/Footer/Footer.js'
 
 const Jumbo = () => (
@@ -44,6 +45,7 @@ const Gapp = () => (
     <HeaderBanner />
     <FullHouse />
     <Nuestros />
+    <Comunidad />
     <Footer />
   </div>
 )

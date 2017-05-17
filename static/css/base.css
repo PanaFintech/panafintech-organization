@@ -27,3 +27,14 @@ h2 {
   margin: 0 auto;
   padding: 80px 40px;
 }
+
+.red-sup {
+  color: red;
+  font-size: 20px;
+  top: 5px;
+  position: relative;
+}
+
+.display-none {
+  display: none !important;
+}

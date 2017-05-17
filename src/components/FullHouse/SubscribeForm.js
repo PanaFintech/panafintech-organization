@@ -43,7 +43,8 @@ class SubscribeForm extends React.Component {
         }else {
           let atpos = this.state.email.indexOf("@");
           let dotpos = this.state.email.lastIndexOf(".");
-          if (atpos<1 || dotpos<atpos+2 || dotpos+2>=this.state.email.length) {
+          // if (atpos<1 || dotpos<atpos+2 || dotpos+2>=this.state.email.length) {
+          if (atpos<1) {
             return "Por favor, escribe una dirección de correo válida";
           }else{
             return "";
@@ -81,7 +82,11 @@ class SubscribeForm extends React.Component {
 
     return event => {
       let state = {};
-      state[field] = event.target.value;
+      if(event.target.value == null){
+        state[field] = "";
+      }else {
+        state[field] = event.target.value;
+      }
       this.setState(state);
     };
 
@@ -90,9 +95,13 @@ class SubscribeForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.onSubmit}>
-
+        <label className="indicated-label">
+          <span className="red-sup">*</span> indicates required
+        </label>
         <div className={this.getClasses('email')}>
-          <label htmlFor='email'>Correo electrónico *</label>
+          <label htmlFor='email'>
+            Correo electrónico <span className="red-sup">*</span>
+          </label>
           <input
             ref='email'
             type='email'
@@ -105,10 +114,12 @@ class SubscribeForm extends React.Component {
         </div>
 
         <div className={this.getClasses('firstname')}>
-          <label htmlFor='firstname'>Nombre *</label>
+          <label htmlFor='firstname'>
+            Nombre <span className="red-sup">*</span>
+          </label>
           <input
             ref='firstname'
-            type='firstname'
+            type='text'
             className='form-control'
             placeholder=''
             onChange={this.onChange('firstname')}
@@ -118,10 +129,12 @@ class SubscribeForm extends React.Component {
         </div>
 
         <div className={this.getClasses('lastname')}>
-          <label htmlFor='lastname'>Apellido *</label>
+          <label htmlFor='lastname'>
+            Apellido <span className="red-sup">*</span>
+          </label>
           <input
             ref='lastname'
-            type='lastname'
+            type='text'
             className='form-control'
             placeholder=''
             onChange={this.onChange('lastname')}
@@ -131,7 +144,7 @@ class SubscribeForm extends React.Component {
         </div>
 
         <div className='text-left form-group'>
-          <button type='submit' className='btn btn-large btn-primary'>Subscribe</button>
+          <button type='submit' className='btn-subscribe btn btn-large btn-primary'>Subscribe</button>
         </div>
 
       </form>
@@ -140,7 +153,7 @@ class SubscribeForm extends React.Component {
 
   renderHelpText(message) {
     return (
-     <span className='help-block'>{message}</span>
+     <span className="help-block">{message}</span>
     );
   }
 

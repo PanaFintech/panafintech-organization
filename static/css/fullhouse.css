@@ -1,4 +1,6 @@
-#section-fullhouse {}
+#section-fullhouse {
+  background-color: #fff;
+}
 
 #section-fullhouse .container {
   padding: 60px 40px;
@@ -11,4 +13,94 @@
 
 #section-fullhouse .fullhouse-content {
   display: flex;
+}
+
+#section-fullhouse .subscribe-home {
+  flex: 0 0 50%;
+  padding: 0 30px;
+}
+
+#section-fullhouse .subscribe-home .indicated-label {
+  text-align: right;
+  font-size: 11px;
+  margin-right: 4%;
+  width: 100%;
+  display: block;
+  color: #000;
+}
+
+#section-fullhouse .subscribe-home label {
+  width: 100%;
+  display: block;
+  margin-bottom: 3px;
+  text-align: left;
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#section-fullhouse .form-group input {
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 8px 0;
+  text-indent: 2%;
+  outline: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+}
+
+#section-fullhouse .form-group.has-error input {
+  border: 2px solid rgb(232, 92, 65);
+}
+
+#section-fullhouse .form-group .help-block {
+  display: none;
+}
+
+#section-fullhouse .form-group.has-error .help-block {
+  display: inline-block;
+  margin: 2px 0 1em 0;
+  padding: 5px 10px;
+  background-color: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: normal;
+  z-index: 1;
+  color: #e85c41;
+  text-align: left;
+}
+
+#section-fullhouse .form-group .btn-subscribe {
+  font-size: 15px;
+  font-weight: normal;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 30px 0;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+#section-fullhouse .form-group.has-error .btn-subscribe {
+  background-color: rgb(170, 170, 170);
+}
+
+#section-fullhouse .form-group.has-error .btn-subscribe:hover {
+  background-color: rgb(168, 168, 168);
+}
+
+#section-fullhouse .cardcontent-div {
+  flex: 0 0 50%;
+  padding: 0 30px;
+}
+
+#section-fullhouse .cardcontent-div img {
+  width: 100%;
 }

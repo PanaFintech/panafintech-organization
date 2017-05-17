@@ -21,7 +21,7 @@ export default class FullHouse extends React.Component {
             </div>
 
             <div className="cardcontent-div">
-              <img src="" />
+              <img src="./images/panafintech-face-event2_orig.png"/>
             </div>
 
           </div>

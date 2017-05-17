@@ -1,0 +1,160 @@
+#section-comunidad {
+  background-color: #fff;
+}
+
+#section-comunidad .comunidad-content {
+  display: flex;
+}
+
+
+#section-comunidad h2.sub-title {
+  text-align: center;
+}
+
+#section-comunidad .description {
+  font-family: 'Birdseye', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.75;
+  margin: 0 auto 30px;
+}
+
+#section-comunidad .comunidad-content {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+#section-comunidad .comunidad-content .sendmail-div {
+  flex: 0 0 50%;
+  max-width: 400px;
+}
+
+#section-comunidad .comunidad-content .slack-img-div {
+  flex: 0 0 50%;
+}
+
+#section-comunidad .comunidad-content .slack-img-div img {
+  width: 100%;
+}
+
+#form-sendmail {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#form-sendmail .form-group {
+  padding: 0 15px;
+}
+
+#form-sendmail .name-div {
+  display: flex;
+}
+
+#form-sendmail .name-div .firstname {
+  flex: 0 0 40%;
+}
+
+#form-sendmail .name-div .lastname {
+  flex: 0 0 60%;
+}
+
+#form-sendmail .form-group label {
+  display: inline-block;
+  padding: 0;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+#form-sendmail input[type='text'],
+#form-sendmail input[type='email'] {
+  webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  text-shadow: none;
+
+  height: auto;
+  padding: 10px 20px !important;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.4);
+
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  border-radius: 0;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#form-sendmail input[type='text']:focus,
+#form-sendmail input[type='email']:focus {
+  background-color: rgba(0,0,0,0.05);
+  border-color: #000000;
+}
+
+
+#form-sendmail .form-group.has-error input[type='text'],
+#form-sendmail .form-group.has-error input[type='email'] {
+  border: 1px solid red !important;
+}
+
+#form-sendmail .btn-submit {
+  display: inline-block;
+  height: auto;
+  padding: 0;
+  background-image: none !important;
+  background-color: transparent;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+
+  text-decoration: none !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  line-height: 1;
+
+  cursor: pointer;
+
+  font-family: 'Birdseye', sans-serif;
+
+  padding: 14px 30px;
+  border-radius: 0;
+
+  outline: none;
+
+  margin: 10px 0;
+}
+
+#form-sendmail .btn-submit:hover {
+  background-color: rgba(0,0,0,0.05);
+  outline: 0;
+}
+
+#form-sendmail .form-group .help-block {
+  color: #000000;
+  font-family: 'Birdseye', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+  text-transform: none;
+}

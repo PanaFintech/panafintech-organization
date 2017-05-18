@@ -1,7 +1,14 @@
 import React from 'react'
+import ReactDom from 'react-dom'
+
 import SendEmailForm from './SendEmailForm.js'
 
 export default class Comunidad extends React.Component {
+
+  componentDidUpdate() {
+    console.log( ReactDOM.findDOMNode(this).scrollTop );
+  }
+
   render() {
     return (
       <section id="section-comunidad" className="pana-section">

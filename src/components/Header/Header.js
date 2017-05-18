@@ -1,26 +1,38 @@
 import React from 'react'
+import {Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink} from 'reactstrap'
 
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
   }
 
   render() {
     return (
-      <nav id="pana-navbar" className="navbar fixed-top navbar-light navbar-toggleable-md bg-faded">
-
-        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <a className="navbar-brand" href="#">Navbar</a>
-
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-item-panafintech nav-item nav-link" href="#">PANAFINTECH</a>
-          </div>
-        </div>
-      </nav>
-    )
+      <div>
+        <Navbar id="pana-navbar" light toggleable>
+          <Nav>
+            <NavbarToggler right onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <NavLink className="nav-item-panafintech" href="">PANAFINTECH</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Nav>
+        </Navbar>
+      </div>
+    );
   }
 }

@@ -38,3 +38,11 @@ h2 {
 .display-none {
   display: none !important;
 }
+
+.pana-show-anim {
+  -webkit-transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1);
+  opacity: 1 !important;
+  -webkit-transition: -webkit-transform 0.3s ease-in 0.3s, opacity 0.3s ease-in 0.3s;
+  transition: transform 0.3s ease-in 0.3s, opacity 0.3s ease-in 0.3s;
+}

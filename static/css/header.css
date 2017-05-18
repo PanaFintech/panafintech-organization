@@ -1,10 +1,23 @@
 #pana-navbar {
   background-color: transparent;
   padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  min-height: 50px;
+  z-index: 999;
+
+  box-sizing: border-box;
+  -webkit-transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
+  -moz-transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
+  -ms-transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
+  transition: background-color 300ms ease, color 260ms ease, padding 180ms ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-#pana-navbar .navbar-brand {
-  display: none;
+#pana-navbar .nav {
+  align-items: flex-end;
+  width: 100%;
 }
 
 #pana-navbar .nav-item-panafintech {
@@ -30,6 +43,8 @@
   opacity: 0.6;
 }
 
-#pana-navbar .navbar-collapse {
-  justify-content: flex-end;
+#pana-navbar .navbar-light .navbar-toggler {
+  cursor: pointer;
+  border: none;
+  outline: none;
 }

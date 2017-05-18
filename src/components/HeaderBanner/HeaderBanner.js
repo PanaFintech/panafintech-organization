@@ -1,5 +1,6 @@
 import React from 'react'
 
+import VisibilitySensor from 'react-visibility-sensor'
 import Icon from 'react-icons-kit'
 import { facebook, twitter, mail2, github, instagram } from 'react-icons-kit/icomoon/'
 
@@ -15,8 +16,7 @@ export default class HeaderBanner extends React.Component {
   componentDidMount () {
     setTimeout(() => {
       this.setState({
-        // isLoaded: true
-        isLoaded: false //test code
+        isLoaded: true
       })
     }, 500);
   }
@@ -25,28 +25,28 @@ export default class HeaderBanner extends React.Component {
 
     if (className == 'logo') {
       if(this.state.isLoaded) {
-        return 'wsite-image wsite-image-border-none logo-img-div banner-show-anim';
+        return 'logo-div pana-show-anim';
       }
       else {
         return 'logo-div';
       }
-    } else if( className == 'title') {
+    } else if( className == 'header-title') {
       if(this.state.isLoaded) {
-        return 'wsite-content-title title-anim';
+        return 'header-title pana-show-anim';
       }
       else {
         return 'header-title';
       }
-    } else if(className == 'paragraph' ) {
+    } else if(className == 'sub-title' ) {
       if(this.state.isLoaded) {
-        return 'paragraph paragraph-anim';
+        return 'sub-title pana-show-anim';
       }
       else {
         return 'sub-title';
       }
     } else if(className == 'btndiv' ) {
       if(this.state.isLoaded) {
-        return 'header-banner-btn-div anim';
+        return 'btn-div pana-show-anim';
       }
       else {
         return 'btn-div';
@@ -54,7 +54,14 @@ export default class HeaderBanner extends React.Component {
     }
   }
 
+  onChange (isVisible) {
+    // if( !this.state.isLoaded && isVisible )
+    //   this.state.isLoaded = isVisible;
+    console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
+  }
+
   render() {
+
     return (
       <section id="header-banner" className="pana-section">
         <div className="container">
@@ -65,11 +72,11 @@ export default class HeaderBanner extends React.Component {
             </a>
           </div>
 
-          <h2 className={this.getClassName('title')}>
+          <h2 className={this.getClassName('header-title')}>
             PROMOVIENDO LA INNOVACIÓN FINANCIERA
           </h2>
 
-          <p className={this.getClassName('paragraph')}>
+          <p className={this.getClassName('sub-title')}>
             Somos la comunidad de Fintech de Panamá.
           </p>
 

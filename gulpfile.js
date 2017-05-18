@@ -66,6 +66,6 @@ gulp.task('images', function () {
   .pipe(gulp.dest('dist/images/'))
 })
 
-gulp.task('build-display', ['build-static-files', 'build-js', 'cssDependencies'])
+gulp.task('build-display', ['build-static-files', 'build-js', 'cssDependencies', 'images'])
 
 gulp.task('default', ['build-display'])

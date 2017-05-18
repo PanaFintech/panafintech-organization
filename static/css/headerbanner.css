@@ -125,3 +125,7 @@
 #header-banner .container {
    padding: 0;
 }
+
+#header-banner .social-btn-div a {
+  color: #fff;
+}

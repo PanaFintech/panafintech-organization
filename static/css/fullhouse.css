@@ -12,3 +12,7 @@
 #section-fullhouse .fullhouse-content {
   display: flex;
 }
+
+.cardcontent-div {
+  padding: 1em;
+}

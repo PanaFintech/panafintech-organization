@@ -48,3 +48,16 @@
   border: none;
   outline: none;
 }
+
+#pana-navbar.shrink {
+  background: #fff;
+  border-color: #000;
+  color: #000;
+  padding: 10px 40px;
+}
+
+#pana-navbar.shrink .nav-item-panafintech {
+  border-color: #000;
+  color: #000;
+  padding: 10px 20px;
+}

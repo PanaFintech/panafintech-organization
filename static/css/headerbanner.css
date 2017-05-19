@@ -53,8 +53,8 @@
 
 #header-banner .btn-div {
   display: flex;
+  flex-wrap: wrap;
   margin: 15px auto 0;
-  padding: 10px 0;
   align-items: stretch;
   justify-content: space-between;
 
@@ -62,8 +62,9 @@
   transform: translateY(20px);
 }
 
-#header-banner .btn-div .page-btn-div {
-
+#header-banner .btn-div .page-btn-div a {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #header-banner .pana-btn {
@@ -140,4 +141,45 @@
   opacity: 1 !important;
   -webkit-transition: -webkit-transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
   transition: transform 0.7s ease-in 0.8s, opacity 0.7s ease-in 0.8s;
+}
+
+
+@media screen and (max-width:820px) {
+  #header-banner .btn-asist {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width:799px) {
+  #header-banner .btn-asist {
+
+  }
+
+  #header-banner .btn-div .page-btn-div {
+    display: flex;
+  }
+
+  #header-banner .btn-div .social-btn-div {
+    flex: 0 0 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #header-banner {
+    height: auto;
+  }
+
+  #header-banner .btn-div .page-btn-div {
+    flex: 0 0 300px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #header-banner h2.header-title {
+    font-size: 30px;
+  }
 }

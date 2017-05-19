@@ -4,6 +4,8 @@
 
 #section-fullhouse .container {
   padding: 60px 40px;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 #section-fullhouse h2.sub-title {

@@ -66,6 +66,7 @@
     "react-pure-render": "^1.0.2",
     "react-social-icons": "^2.6.0",
     "react-validation-mixin": "^5.4.0",
+    "react-visibility-sensor": "^3.9.0",
     "reactify": "^1.1.1",
     "standard": "^9.0.2",
     "through2": "^2.0.3"

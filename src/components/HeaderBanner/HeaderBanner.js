@@ -83,15 +83,15 @@ export default class HeaderBanner extends React.Component {
           <div className={this.getClassName('btndiv')}>
 
             <div className="page-btn-div">
-              <a className="btn-asist pana-btn pana-btn-primary"  href="http://www.panafintech.com/#evento">
+              <a className="btn-asist pana-btn pana-btn-primary"  href="#section-fullhouse">
                   ¡asiste a nuestros eventos!
               </a>
 
-              <a className="btn-commun pana-btn" href="http://www.panafintech.com/#slack">
+              <a className="btn-commun pana-btn" href="#section-comunidad">
                   Comunidad slack
               </a>
 
-              <a className="btn-object pana-btn" href="http://www.panafintech.com/#objetivos">
+              <a className="btn-object pana-btn" href="#section-nuestros">
                 Objetivos
               </a>
             </div>

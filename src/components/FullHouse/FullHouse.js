@@ -31,6 +31,13 @@ export default class FullHouse extends React.Component {
     }
   }
 
+  componentDidMount () {
+    if( !this.state.isVisible ) {
+      if( document.getElementById('fullhouse-title').getBoundingClientRect().top < window.innerHeight ) {
+        this.setState({isVisible: true});
+      }
+    }
+  }
 
   render() {
     return (

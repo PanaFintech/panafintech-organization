@@ -6,7 +6,9 @@
   display: flex;
 }
 
-#section-comunidad .container {  
+#section-comunidad .container {
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 #section-comunidad h2.sub-title {

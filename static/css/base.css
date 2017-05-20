@@ -46,3 +46,9 @@ h2 {
   -webkit-transition: -webkit-transform 0.3s ease-in 0.3s, opacity 0.3s ease-in 0.3s;
   transition: transform 0.3s ease-in 0.3s, opacity 0.3s ease-in 0.3s;
 }
+
+@media screen and (max-width: 479px) {
+  .pana-section .container {
+    padding-left: 40px 20px;
+  }
+}

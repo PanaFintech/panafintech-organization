@@ -106,3 +106,22 @@
 #section-fullhouse .cardcontent-div img {
   width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+
+  #section-fullhouse .container {
+    padding: 40px 20px;
+  }
+  
+  #section-fullhouse .fullhouse-content {
+    flex-wrap: wrap;
+  }
+
+  #section-fullhouse .subscribe-home {
+    flex: 0 0 100%;
+  }
+
+  #section-fullhouse .cardcontent-div {
+    flex: 0 0 100%;
+  }
+}

@@ -4,7 +4,7 @@ export default class Nuestros extends React.Component {
 
   render() {
     return (
-      <section id="section-nuestros">
+      <section id="section-nuestros" className="pana-section">
         <div className="container">
           <h2 className="sub-title">
             NUESTROS OBJETIVOS

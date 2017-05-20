@@ -1,5 +1,5 @@
 #pana-footer {
-  padding: 60px 40px;
+  /*padding: 60px 40px;*/
   background-color: #f2f2f2;
 }
 
@@ -9,6 +9,7 @@
   justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
+  padding: 60px 40px;
 }
 
 #pana-footer .footer-description {
@@ -68,4 +69,31 @@
   font-weight: 500;
   line-height: 1.75;
   color: #000;
+}
+
+@media screen and (max-width: 767px) {
+
+  #pana-footer .container {
+    flex-wrap: wrap;
+  }
+
+  #pana-footer .footer-description {
+    flex: 0 0 100%;
+  }
+
+  #pana-footer .social-div {
+    flex: 0 0 100%;
+    margin-top: 30px;
+    align-items: left;
+  }
+
+  #pana-footer .social-btn-div {
+    text-align: left;
+  }
+
+  #pana-footer .copyright {
+    text-align: left;
+    width: 100%;
+  }
+
 }

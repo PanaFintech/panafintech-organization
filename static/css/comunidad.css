@@ -32,10 +32,12 @@
 #section-comunidad .comunidad-content .sendmail-div {
   flex: 0 0 50%;
   max-width: 400px;
+  padding-right: 15px;
 }
 
 #section-comunidad .comunidad-content .slack-img-div {
   flex: 0 0 50%;
+  padding-left: 15px;
 }
 
 #section-comunidad .comunidad-content .slack-img-div img {
@@ -161,4 +163,31 @@
   -webkit-font-smoothing: antialiased;
   color: #000;
   text-transform: none;
+}
+
+@media screen and (max-width: 767px) {
+
+  #section-comunidad .comunidad-content {
+    flex-wrap: wrap;
+  }
+
+  #section-comunidad .comunidad-content .sendmail-div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #form-sendmail .name-div .form-group:first-child {
+    flex: 0 0 40%;
+  }
+
+  #form-sendmail .name-div .form-group:last-child {
+    flex: 0 0 60%;
+  }
+
+  #section-comunidad .comunidad-content .slack-img-div {
+    flex: 0 0 100%;
+    padding-top: 30px;
+  }
+
+
 }

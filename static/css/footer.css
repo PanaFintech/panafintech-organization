@@ -79,6 +79,8 @@
 
   #pana-footer .footer-description {
     flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
   }
 
   #pana-footer .social-div {
